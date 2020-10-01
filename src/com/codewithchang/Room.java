@@ -37,12 +37,59 @@ public class Room {
         System.out.println();
     }
 
-    private int add(int i, int j) {
-        return i + j;
+    public String getRoomNumber() {
+        return roomNumber;
     }
 
-    public int add2(int i, int j) {
-        return add(i,j);
+    public void setRoomNumber(String roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
+    public String getRoomType() {
+        return roomType;
+    }
+
+    public void setRoomType(String roomType) {
+        this.roomType = roomType;
+    }
+
+    public String getFloor() {
+        return floor;
+    }
+
+    public void setFloor(String floor) {
+        this.floor = floor;
+    }
+
+    public boolean isOccupied() {
+        return isOccupied;
+    }
+
+    public void setOccupied(boolean occupied) {
+        isOccupied = occupied;
+    }
+
+    public boolean isNeedsCleaning() {
+        return needsCleaning;
+    }
+
+    public void setNeedsCleaning(boolean needsCleaning) {
+        this.needsCleaning = needsCleaning;
+    }
+
+    public Client getOccupant() {
+        return occupant;
+    }
+
+    public void setOccupant(Client occupant) {
+        this.occupant = occupant;
+    }
+
+    public double getAveragePrice() {
+        return averagePrice;
+    }
+
+    public void setAveragePrice(double averagePrice) {
+        this.averagePrice = averagePrice;
+    }
 }
